@@ -8,7 +8,7 @@ function WeatherBar() {
 
   const fetchData = async (data) => {
     try {
-      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${data}&appid=175d41b1d70fd63376346f8f5a53f30d`);
+      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${data}&appid=bf80ccd5f0dc737079f714a64682b436`);
       console.log("res",response.data);
       setWeatherData(response.data);
     } catch (error) {
